@@ -13,24 +13,24 @@
 				box-sizing: border-box;
 			}
 			
-			#form {
+			#auth-form {
 				width: 800px;
 				height: 450px;
 				background-color: #6ed0f6;
 				text-align: center;
 			}
 			
-			.form-top {
+			.auth-form-top {
 				display: table;
 				margin: 0 auto;
 				width: 448px;;
 				height: 111px;
 			}
-			.form-functions {
+			.auth-form-functions {
 				display: table-cell;
 				vertical-align: middle;
 			}
-			.form-top a {
+			.auth-form-top a {
 				float: left;
 				font-size: 14px;
 				font-weight: 800;
@@ -38,17 +38,17 @@
 				text-transform: uppercase;
 				text-decoration: none;
 			}
-			.form-top a.active, #form input[type="submit"] {
+			.auth-form-top a.active, #auth-form input[type="submit"] {
 				color: #fefefe;
 			}
-			.form-top .sign-up {
+			.auth-form-top .sign-up {
 				margin-left: 26px;
 			}
-			.form-top .reset {
+			.auth-form-top .reset {
 				float: right;
 			}
 			
-			#form input[type="text"], #form input[type="submit"] {
+			#auth-form input[type="text"], #auth-form input[type="submit"] {
 				width: 448px;
 				border-radius: 6px;
 				font-size: 20px;
@@ -56,37 +56,37 @@
 				margin-bottom: 10px;
 				border: none;
 			}
-			#form input[type="text"] {
+			#auth-form input[type="text"] {
 				height: 74px;
 				padding: 29px 22px;
 			}
-			#form input[type="text"]::placeholder {
+			#auth-form input[type="text"]::placeholder {
 				color: #dedfdf;
 			}
-			#form input[type="text"]::-moz-placeholder {
+			#auth-form input[type="text"]::-moz-placeholder {
 				color: #dedfdf;
 			}
-			#form input[type="text"]::-webkit-input-placeholder {
+			#auth-form input[type="text"]::-webkit-input-placeholder {
 				color: #dedfdf;
 			}
-			#form input[type="text"]:-ms-input-placeholder {
+			#auth-form input[type="text"]:-ms-input-placeholder {
 				color: #dedfdf;
 			}
-			#form input[type="submit"] {
+			#auth-form input[type="submit"] {
 				height: 72px;
 				background-color: #079bcf;
 			}
-			#form input[type="text"]:focus {
+			#auth-form input[type="text"]:focus {
 				outline: none;
 			}
-			#form input[type="submit"]:hover {
+			#auth-form input[type="submit"]:hover {
 				cursor: pointer;
 			}
-			#form .email {
+			#auth-form .email {
 				display: inline-block;
 				position: relative;
 			}
-			#form .email:before {
+			#auth-form .email:before {
 				content: "";
 				position: absolute;
 				display: block;
@@ -100,10 +100,11 @@
 			}
 		</style>
 	</head>
+	
 	<body>
-		<form id="form">
-			<div class="form-top">
-				<div class="form-functions">
+		<form id="auth-form">
+			<div class="auth-form-top">
+				<div class="auth-form-functions">
 					<a class="sign-in active" href="#">Sign in</a>
 					<a class="sign-up" href="#">Sign up</a>
 					<a class="reset" href="#">Reset</a>
@@ -119,3 +120,4 @@
 			<input class="submit" type="submit" name="submit_button" value="Sign in">
 		</form>
 	</body>
+</html>
