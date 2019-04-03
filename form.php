@@ -13,7 +13,7 @@
 				box-sizing: border-box;
 			}
 			
-			#auth-form {
+			.auth-form {
 				width: 800px;
 				height: 450px;
 				background-color: #6ed0f6;
@@ -38,7 +38,7 @@
 				text-transform: uppercase;
 				text-decoration: none;
 			}
-			.auth-form-top a.active, #auth-form input[type="submit"] {
+			.auth-form-top a.active, .auth-form input[type="submit"] {
 				color: #fefefe;
 			}
 			.auth-form-top .sign-up {
@@ -48,7 +48,7 @@
 				float: right;
 			}
 			
-			#auth-form input[type="text"], #auth-form input[type="submit"] {
+			.auth-form input[type="text"], .auth-form input[type="submit"] {
 				width: 448px;
 				border-radius: 6px;
 				font-size: 20px;
@@ -56,37 +56,37 @@
 				margin-bottom: 10px;
 				border: none;
 			}
-			#auth-form input[type="text"] {
+			.auth-form input[type="text"] {
 				height: 74px;
 				padding: 29px 22px;
 			}
-			#auth-form input[type="text"]::placeholder {
+			.auth-form input[type="text"]::placeholder {
 				color: #dedfdf;
 			}
-			#auth-form input[type="text"]::-moz-placeholder {
+			.auth-form input[type="text"]::-moz-placeholder {
 				color: #dedfdf;
 			}
-			#auth-form input[type="text"]::-webkit-input-placeholder {
+			.auth-form input[type="text"]::-webkit-input-placeholder {
 				color: #dedfdf;
 			}
-			#auth-form input[type="text"]:-ms-input-placeholder {
+			.auth-form input[type="text"]:-ms-input-placeholder {
 				color: #dedfdf;
 			}
-			#auth-form input[type="submit"] {
+			.auth-form input[type="submit"] {
 				height: 72px;
 				background-color: #079bcf;
 			}
-			#auth-form input[type="text"]:focus {
+			.auth-form input[type="text"]:focus {
 				outline: none;
 			}
-			#auth-form input[type="submit"]:hover {
+			.auth-form input[type="submit"]:hover {
 				cursor: pointer;
 			}
-			#auth-form .email {
+			.auth-form .email {
 				display: inline-block;
 				position: relative;
 			}
-			#auth-form .email:before {
+			.auth-form .email:before {
 				content: "";
 				position: absolute;
 				display: block;
@@ -100,8 +100,9 @@
 			}
 		</style>
 	</head>
+	
 	<body>
-		<form id="auth-form">
+		<form class="auth-form">
 			<div class="auth-form-top">
 				<div class="auth-form-functions">
 					<a class="sign-in active" href="#">Sign in</a>
