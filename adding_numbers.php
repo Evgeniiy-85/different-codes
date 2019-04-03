@@ -19,6 +19,10 @@ function add($left, $right)
 		die('Аргументы имеют неправильный тип данных');
 	}
 	
+	if (empty($left) || empty($right)) {
+		die('Один из аргументов пустой');
+	}
+	
 	$result = '';
 	$transfer = 0;
 	
@@ -57,33 +61,3 @@ foreach ($sum_test_cases as $case) {
 	
 	echo add($left, $right) . '<br>';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-exit;
