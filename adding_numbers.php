@@ -19,7 +19,7 @@ function add($left, $right)
 		die('Аргументы имеют неправильный тип данных');
 	}
 	
-	if (empty($left) || empty($right)) {
+	if ($left == '' || $right == '') {
 		die('Один из аргументов пустой');
 	}
 	
